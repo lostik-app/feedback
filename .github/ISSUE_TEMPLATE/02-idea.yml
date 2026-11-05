@@ -1,0 +1,30 @@
+name: "Предложение"
+description: "Что стоит добавить или изменить и для чего."
+labels:
+  - "идея"
+body:
+  -
+    type: "markdown"
+    attributes:
+      value: "Обращения видны всем. Уберите со скриншотов личные переписки и данные для входа. Об уязвимостях сообщайте через закрытую форму в разделе Security."
+  -
+    type: "textarea"
+    id: "problem"
+    attributes:
+      label: "Какую задачу нужно решить?"
+    validations:
+      required: true
+  -
+    type: "textarea"
+    id: "proposal"
+    attributes:
+      label: "Что предлагаете изменить?"
+    validations:
+      required: true
+  -
+    type: "textarea"
+    id: "example"
+    attributes:
+      label: "Пример или ссылка"
+    validations:
+      required: false

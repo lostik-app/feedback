@@ -1,0 +1,44 @@
+name: "Ошибка"
+description: "Что-то не работает или работает не так, как ожидалось."
+labels:
+  - "ошибка"
+body:
+  -
+    type: "markdown"
+    attributes:
+      value: "Обращения видны всем. Уберите со скриншотов личные переписки и данные для входа. Об уязвимостях сообщайте через закрытую форму в разделе Security."
+  -
+    type: "textarea"
+    id: "problem"
+    attributes:
+      label: "Что произошло?"
+    validations:
+      required: true
+  -
+    type: "textarea"
+    id: "steps"
+    attributes:
+      label: "Как повторить проблему"
+    validations:
+      required: true
+  -
+    type: "textarea"
+    id: "expected"
+    attributes:
+      label: "Что должно было произойти?"
+    validations:
+      required: true
+  -
+    type: "input"
+    id: "environment"
+    attributes:
+      label: "Браузер и устройство"
+      placeholder: "Например, Firefox на Windows или Safari на iPhone"
+  -
+    type: "textarea"
+    id: "attachments"
+    attributes:
+      label: "Скриншоты или короткая запись экрана"
+      description: "Приложите только то, что помогает показать проблему."
+    validations:
+      required: false
